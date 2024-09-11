@@ -6,7 +6,7 @@ import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Button } from "../ui/button"
+import { Button } from "@/components/ui/button"
 
 const MobileNav = () => {
   const pathname = usePathname();
@@ -41,7 +41,7 @@ const MobileNav = () => {
                 <Image 
                   src="/assets/images/logo-text.svg"
                   alt="logo"
-                  width={152}
+                  width={100}
                   height={23}
                 />
 
