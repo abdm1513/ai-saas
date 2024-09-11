@@ -14,17 +14,20 @@ const MobileNav = () => {
   return (
     <header className="header">
       <Link href="/" className="flex items-center gap-2 md:py-2">
+       <div className="w-44 h-auto"> 
         <Image
           src="/assets/images/logo-text.svg"
           alt="logo"
           width={180}
           height={28}
+          priority
         />
+        </div>
       </Link>
 
       <nav className="flex gap-2">
         <SignedIn>
-          <UserButton afterSignOutUrl="/" />
+          <UserButton />
 
           <Sheet>
             <SheetTrigger>
